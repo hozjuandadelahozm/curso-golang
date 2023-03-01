@@ -1,11 +1,16 @@
 package main
 
-import (
-	"fmt"
-	"paquetes/models"
-)
+// import "github.com/donvito/hellomod"
+
+import "github.com/hozjuandadelahozm/figuras"
 
 func main() {
+
+	cua1 := figuras.Cuadrado{Lado: 10}
+	figuras.Medidas(&cua1)
+
+	// hellomod.SayHello()
+
 	// mensajes.Hola()
 	// mensajes.Imprimir()
 
@@ -15,13 +20,13 @@ func main() {
 	// cir1 := figuras.Circulo{Radio: 5}
 	// figuras.Medidas(&cir1)
 
-	p1 := models.Persona{}
-	p1.Constructor("Juan", 25)
+	// p1 := models.Persona{}
+	// p1.Constructor("Juan", 25)
 
-	fmt.Println(p1)
-	fmt.Println(p1.GetNombre())
+	// fmt.Println(p1)
+	// fmt.Println(p1.GetNombre())
 
-	p1.SetNombre("David")
-	fmt.Println(p1)
+	// p1.SetNombre("David")
+	// fmt.Println(p1)
 
 }
